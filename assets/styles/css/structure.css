@@ -1,0 +1,40 @@
+/*
+    Document   : structure
+    Description:
+        Estructura principal de la web
+*/
+
+/* -----------------------------------------------------------------------------
+ * HTML, BODY
+ * -----------------------------------------------------------------------------
+ */
+html, body { background: #fff; font: normal 13px/16px Arial, Verdana sans-serif; }
+
+/* -----------------------------------------------------------------------------
+ * MAIN STRUCTURE
+ * -----------------------------------------------------------------------------
+ */
+#main {  }
+
+/* Header */
+#header { }
+
+/* Footer */
+#footer	  {  }
+
+/* -----------------------------------------------------------------------------
+ * LAYOUT . Ejemplos de estructuras
+ * -----------------------------------------------------------------------------
+ */
+.container		{ margin: 0 auto; position: relative; width: 940px; }
+.layout-left 	{ float: left; }
+.layout-center 	{ float: left; }
+.layout-right 	{ float: right; }
+
+/* 1 column */
+.layout-1 {  }
+
+/* 2 columns: 455px + 450px */
+.layout-2-a {  }
+	.layout-2-a .layout-left { width: 455px; }
+	.layout-2-a .layout-right { width: 450px; }

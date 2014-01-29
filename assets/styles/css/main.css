@@ -1,0 +1,25 @@
+/*
+    Document   : main
+    Description:
+        Carga de todos los .css implicados en el diseño
+*/
+
+/*
+ * Reseteo de exploradores
+ */
+@import url("reset.css");
+
+/*
+ * Estructura de la página
+ */
+@import url("structure.css");
+
+/*
+ * Todos los elementos del contenido
+ */
+@import url("content.css");
+
+/*
+ * Elementos de los formularios
+ */
+@import url("forms.css");

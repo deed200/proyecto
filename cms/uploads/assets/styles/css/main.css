@@ -1,0 +1,37 @@
+/* CSS DE LA PARTE PRIVADA CMS */
+/*html,body{background-color: #dfdfdf;}*/
+/* GENERAL */
+.contenedor{width: 980px;background-color:#fff}
+.pie{margin-top: 5px;}
+/* FORMULARIOS DE LOGIN Y DE RECORDAR CONTRASEÑA */
+.login{border: 1px black solid;padding: 3%;}
+.recordar{padding-top: 13px;background-color: #e0e0e0;height: 45px;}
+.recordar input{margin-top: -7px;}
+.contenedor-form{width: 500px;margin: 0 auto;}
+
+/* PAGINAS DE INICIO, LISTADO Y DETALLE */
+.margen-derecha{margin: 10px;}
+.titulo{font-size: 32px;}
+.subtitulo{font-size: 20px;}
+.izquierda{padding-left:15px;}
+hr{border-top: 1px solid #000;margin-bottom: 10px;/*margin-top: 0px;*/}
+.pie{height: 60px;}
+.pie-izq{padding-left: 20px;}
+.pie-der{padding-right: 20px;}
+.vr{/* display:inline;*/height:50px;width:1px;border:1px solid;margin:20px 10px 0 10px;}
+.alto-fijo{height:40px;}
+.hr-nomargin{margin-top: 0px;}
+.cab-izq{width: 125 px;}
+.cab-der{width: 840px;margin-left:5px;}
+.cab-der a{margin-top: -30px;}
+h3{padding: 0 15px;}
+.largo{width: 320px;}
+.bajar{width:200px;margin: 30px 0px;}
+span>.glyphicon{vertical-align: middle;}
+.centr{margin-top: 45px;}
+.ancho-fijo{width: 300px;}
+/*span>hr{margin-top:10px;}*/
+.margen-10{margin-top:10px;}
+.azul{color:#045887;}
+.naranja{color:#ff5a00;}
+

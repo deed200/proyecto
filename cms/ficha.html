@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Codificación -->
+	<meta charset="UTF-8">
+	<!-- Titulo -->
+	<title>UAZON - CMS</title>
+	<!-- Nuestro CSS principal -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/main.css">
+</head>
+<body>
+	<!-- Nuestro propio fichero JavaScript -->
+	<script type="text/javascript" src="assets/scripts/lib/jquery/jquery.min.js"></script>
+	<!-- Librerías como jQuery -->
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<div class="contenedor container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header ancho-fijo">
+          			<a href="index.html" class="navbar-brand"><img src="../cms/uploads/images/logo.png" alt="logo"/></a>
+          			<span class="text-muted pull-left centr azul">content manager system</span>
+        		</div>
+				<div class="collapse navbar-collapse">
+					<p class="navbar-text navbar-right centr">Hola, <a href="#" class="navbar-link">Administrador</a> <span class="glyphicon glyphicon-play"></span></p>
+				</div>
+			</nav>	
+			<ul class="nav nav-pills">
+				<li class="text-center"><a href="listado.html"><img src="../cms/uploads/images/libros/menu_libro.png" alt="menu_libro" /><br/>Libros</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/autores.png" alt="autores" /><br/>Autores</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/carrito.png" alt="autores" /><br/>Pedidos</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/comment.png" alt="autores" /><br/>Comentarios</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/usuarios.png" alt="autores" /><br/>Usuarios</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/config.png" alt="autores" /><br/>Config</a></li>
+			</ul>	
+			<hr class="hr-nomargin"/><br/>	
+			<div> <!-- Cabecera -->
+				<div class="pull-left cab-izq">
+					<img src="../cms/uploads/images/libros/libro_icono.png" alt="libro">
+				</div>
+				<div class="pull-left cab-der">
+					<h3 class="azul">Libros <small><em>Frankenstein</em></small></h3>
+					<a class="pull-right" href="listado.html"><span class="glyphicon glyphicon-backward"></span>&nbsp;Volver</a>
+					<hr class="margen-10"/>
+					<ol class="breadcrumb">
+					  <li><a href="index.html"><small>Home</small></a></li>
+					  <li><a href="listado.html"><small>Libros</small></a></li>
+					  <li class="active"><small>Frankenstein</small></li>
+					</ol>
+				</div>
+			</div>
+			
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="col-md-6">
+					<form role="form">
+						<div class="form-group">
+							<label for="isbn" class="text-muted">isbn</label>
+							<div class="row">
+								<div class="col-md-6">
+									<input type="text" class="form-control" id="isbn" value="743487583">
+								</div>
+								<div class="col-md-4">
+									<span class="lead"><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span></span>
+									<br/>
+									<span class="text-muted small">43 votos</span>
+								</div>
+								<div class="col-md-2">
+									<span class="lead"><span class="glyphicon glyphicon-comment"></span></span><span class="text-muted">&nbsp;&nbsp;1/1</span>
+								</div>
+							</div>
+						</div>
+						 <div class="form-group">
+							<label for="titulo" class="text-muted">titulo</label>
+							<input type="text" class="form-control input-lg" id="titulo" value="Frankenstein">
+						 </div>
+						 <div class="form-group">
+							<label for="editorial" class="text-muted">editorial</label>
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="editorial" value="Anaya">
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="desc" class="text-muted">descripci&oacute;n</label>
+							<textarea class="form-control" rows="7" id="desc"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-md-3">
+									<label for="precio" class="text-muted">precio</label>
+									<input type="text" class="form-control" id="precio" value="9,00">
+								</div>
+								<div class="col-md-3 col-md-offset-1">
+									<label for="pag" class="text-muted">p&aacute;ginas</label>
+									<input type="text" class="form-control" id="pag" value="345">
+								</div>
+							</div>
+						</div>
+						 <button type="submit" class="btn btn-primary pull-right">Guardar</button>
+					</form>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="autor">Autores</label>
+						<input type="text" class="form-control" id="autor" placeholder="nombre autor">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="10" id="autores">Stephen King
+Mario Vargas Llosa
+Leo Tolstoy
+Jorge Buddy
+Charles Dickens
+Lewis Carrol</textarea>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="form-group">
+						<label for="autor">Autores de <strong>Frankenstein</strong></label>
+						<textarea class="form-control" rows="12" id="autores2">Mary Sheley</textarea>
+					</div>
+				</div>
+			</div>
+			<br/><br/>
+			<div class="row">
+				<div class="col-md-4">
+					<form role="form">
+							<div class="form-group">
+							<label for="foto" class="text-muted">fotografias</label><br/>
+							<button type="button" id="foto" class="btn btn-primary btn-block">Subir fotografias</button>
+							<p class="help-block">Subir fotografias relacionadas con el libro.</p>
+						</div>
+					 </form>
+				</div>
+			 </div><br/>
+			 <img src="../cms/uploads/images/libros/frankens.jpg" alt="frank1" class="img-thumbnail"/>
+			 <img src="../cms/uploads/images/libros/frankens.jpg" alt="frank1" class="img-thumbnail"/>
+			 <img src="../cms/uploads/images/libros/frankens.jpg" alt="frank1" class="img-thumbnail"/>
+			<div class="clearfix pie">
+				<hr/>
+				<small class="azul pie-izq">&copy; Universidad de Alicante 2013</small>
+				<small class="azul pie-der pull-right">by <a href="#">Proweb</a>&nbsp;/ v1.04</small>
+			</div>
+		</div>
+</body>
+</html>

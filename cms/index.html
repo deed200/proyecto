@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Codificación -->
+	<meta charset="UTF-8">
+	<!-- Titulo -->
+	<title>UAZON - CMS</title>
+	<!-- Nuestro CSS principal -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/main.css">
+</head>
+<body>
+	<!-- Nuestro propio fichero JavaScript -->
+	<script type="text/javascript" src="assets/scripts/lib/jquery/jquery.min.js"></script>
+	<!-- Librerías como jQuery -->
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<div class="contenedor container">	
+			<nav class="navbar navbar-default">
+				<div class="navbar-header ancho-fijo">
+          			<a href="index.html" class="navbar-brand"><img src="../cms/uploads/images/logo.png" alt="logo"/></a>
+          			<span class="text-muted pull-left centr azul">content manager system</span>
+        		</div>
+				<div class="collapse navbar-collapse">
+					<p class="navbar-text navbar-right centr">Hola, <a href="#" class="navbar-link">Administrador</a> <span class="glyphicon glyphicon-play"></span></p>
+				</div>
+			</nav>	
+			<ul class="nav nav-pills">
+				<li class="text-center"><a href="listado.html"><img src="../cms/uploads/images/libros/menu_libro.png" alt="menu_libro" /><br/>Libros</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/autores.png" alt="autores" /><br/>Autores</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/carrito.png" alt="autores" /><br/>Pedidos</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/comment.png" alt="autores" /><br/>Comentarios</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/usuarios.png" alt="autores" /><br/>Usuarios</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/config.png" alt="autores" /><br/>Config</a></li>
+			</ul>
+			<hr class="hr-nomargin" /><br/>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="media">
+						<img class="media-object pull-left" src="../cms/uploads/images/libros/estadisticas.jpg" alt="...">
+					  <div class="media-body izquierda">
+						<p class="media-heading margen-derecha"><strong><span class="text-info titulo">292,00 &euro;</span></strong></p>
+						<p class="margen-derecha"><span class="glyphicon glyphicon-shopping-cart glyphicon-sm"></span>&nbsp;<a href="#" class="subtitulo">3 pedidos</a></p>
+						<p class="margen-derecha"><span class="glyphicon glyphicon-user glyphicon-sm"></span>&nbsp;<a href="#">10</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-comment glyphicon-sm"></span>&nbsp;<a href="#">6</a></p>
+					  </div>
+					</div>
+					<br />
+					<h3 class="azul"><span class="glyphicon glyphicon-book"></span>&nbsp;&Uacute;ltimos libros </h3>
+					<div class="row">
+						<div class="col-md-4">
+							<a href="ficha.html"><img src="../cms/uploads/images/libros/frank.jpg" alt="frank" class="img-thumbnail"></a><br/>
+							<strong>Frankenstein</strong><br/>
+							<span class="text-muted">Mary Shelly</span><br/>
+							<span class="text-muted"><small>Anaya</small></span><br /><br />
+							<a href="ficha.html"><img src="../cms/uploads/images/libros/frank.jpg" alt="frank" class="img-thumbnail"></a><br/>
+							<strong>Frankenstein</strong><br/>
+							<span class="text-muted">Mary Shelly</span><br/>
+							<span class="text-muted"><small>Anaya</small></span>
+						</div>
+						<div class="col-md-4">
+							<a href="ficha.html"><img src="../cms/uploads/images/libros/frank.jpg" alt="frank" class="img-thumbnail"></a><br/>
+							<strong>Frankenstein</strong><br/>
+							<span class="text-muted">Mary Shelly</span><br/>
+							<span class="text-muted"><small>Anaya</small></span>
+						</div>
+						<div class="col-md-4">
+							<a href="ficha.html"><img src="../cms/uploads/images/libros/frank.jpg" alt="frank" class="img-thumbnail"></a><br/>
+							<strong>Frankenstein</strong><br/>
+							<span class="text-muted">Mary Shelly</span><br/>
+							<span class="text-muted"><small>Anaya</small></span>
+						</div>
+					</div>
+						<br /><a href="#" class="pull-right">+ ver libros</a>
+				</div>
+				<div class="col-md-7">
+					<h3 class="azul"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;&Uacute;ltimos pedidos <small><span class="badge">4</span></small></h3>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<td>fecha</td>
+								<td>pedido</td>
+								<td>usuario</td>
+								<td class="text-center">estado</td>
+								<td>importe</td>
+							</tr>
+						</thead>
+							<tr>
+								<td><span class="text-muted">10/10/2013</span></td>
+								<td class="text-center">#4<br/><img src="../cms/uploads/images/libros/frank-tm.jpg" alt="frankenstein"/></td>
+								<td><strong>Carlos L&oacute;z Blanes </strong><br/> <span class="text-muted">lota@ozu.es</span></td>
+								<td class="text-center"><strong class="text-success">PAGADO</strong></td>
+								<td class="naranja">195,00 &euro;</td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">10/10/2013</span></td>
+								<td class="text-center">#3<br/><img src="../cms/uploads/images/libros/frank-tm.jpg" alt="frankenstein"/></td>
+								<td><strong>Manuel Hernandez Molina </strong><br/> <span class="text-muted">manu@ozu.es</span></td>
+								<td class="text-center"><strong class="text-danger">NO PAGADO</strong></td>
+								<td class="naranja">140,00 &euro;</td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">10/10/2013</span></td>
+								<td class="text-center">#2<br/><img src="../cms/uploads/images/libros/frank-tm.jpg" alt="frankenstein"/></td>
+								<td><strong>Silvia Villacampa Martin </strong><br/> <span class="text-muted">silvia@ozu.es</span></td>
+								<td class="text-center"><strong class="text-success">PAGADO</strong></td>
+								<td class="naranja">61,00 &euro;</td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">10/10/2013</span></td>
+								<td class="text-center">#1<br/><img src="../cms/uploads/images/libros/frank-tm.jpg" alt="frankenstein"/></td>
+								<td><strong>Rebeca Soler Sanchis </strong><br/> <span class="text-muted">rebeca@ozu.es</span></td>
+								<td class="text-center"><strong class="text-success">PAGADO</strong></td>
+								<td class="naranja">36,00 &euro;</td>
+							</tr>
+					</table>
+					<a class="pull-right" href="#">+ ver pedidos</a><br />
+					<h3 class="azul"><span class="glyphicon glyphicon-user"></span>&nbsp;&Uacute;ltimos usuarios <small><span class="badge">10</span></small></h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<td>id</td>
+								<td>usuario</td>
+							</tr>
+						</thead>
+							<tr>
+								<td><span class="text-muted">10</span></td>
+								<td><strong>Vanesa Romero Gonalez</strong> <br/> <span class="text-muted">vane@ozu.es</span></td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">9</span></td>
+								<td><strong>Carlos L&oacute;pez Blanes</strong> <br/> <span class="text-muted">lota@ozu.es</span></td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">8</span></td>
+								<td><strong>Pablo Sanchez Garcia</strong> <br/> <span class="text-muted">pablito@ozu.es</span></td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">7</span></td>
+								<td><strong>Manuel Hernandez Molina</strong> <br/> <span class="text-muted">manu@ozu.es</span></td>
+							</tr>
+							<tr>
+								<td><span class="text-muted">6</span></td>
+								<td><strong>Patricia Lorca Cant&oacute;</strong> <br /> <span class="text-muted">patri@ozu.es</span></td>
+							</tr>
+					</table>
+					<a class="pull-right" href="#">+ ver usuarios</a><br />
+					<h3 class="azul"><span class="glyphicon glyphicon-comment"></span>&nbsp;&Uacute;ltimos comentarios <small><span class="badge">6</span></small></h3>
+					<table class="table">
+						<thead>
+							<tr>
+								<td>comentario</td>
+								<td>activo</td>
+							</tr>
+						</thead>
+							<tr>
+								<td><strong>Andrea Zamora</strong> comenta <a href="#">Frankestein</a><br/> <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor sodales justo et accumsan. In varius non arcu in adipiscing. Donec bibendum erat quis orci porttitor sollicitudin. In felis dui, accumsan a dignissim et, dictum et lectus.</span></td>
+								<td><div class="checkbox"><label><input type="checkbox" value="" class="input-lg"></label></div></td>
+							</tr>
+							<tr>
+								<td><strong>Carolina Romero</strong> comenta <a href="#">Anna Karenina</a><br/> <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor sodales justo et accumsan. In varius non arcu in adipiscing. Donec bibendum erat quis orci porttitor sollicitudin. In felis dui, accumsan a dignissim et, dictum et lectus.</span></td>
+								<td><div class="checkbox"><label><input type="checkbox" value="input-lg"></label></div></td>
+							</tr>
+							<tr>
+								<td><strong>Pilar Ribas</strong> comenta <a href="#">Anna Karenina</a><br/> <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempor sodales justo et accumsan. In varius non arcu in adipiscing. Donec bibendum erat quis orci porttitor sollicitudin. In felis dui, accumsan a dignissim et, dictum et lectus.</span></td>
+								<td><div class="checkbox"><label><input type="checkbox" value="input-lg"></label></div></td>
+							</tr>
+					</table>
+					<a class="pull-right" href="#">+ ver comentarios</a><br />
+				</div>
+			</div>
+			<div class="clearfix pie">
+				<hr/>
+				<small class="azul pie-izq">&copy; Universidad de Alicante 2013</small>
+				<small class="azul pie-der pull-right">by <a href="#">Proweb</a>&nbsp;/ v1.04</small>
+			</div>
+		</div>
+</body>
+</html>

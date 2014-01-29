@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Codificación -->
+	<meta charset="UTF-8">
+	<!-- Titulo -->
+	<title>UAZON - CMS</title>
+	<!-- Nuestro CSS principal -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/css/main.css">
+</head>
+<body>
+	<!-- Nuestro propio fichero JavaScript -->
+	<script type="text/javascript" src="assets/scripts/lib/jquery/jquery.min.js"></script>
+	<!-- Librerías como jQuery -->
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<div class="contenedor container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header ancho-fijo">
+          			<a href="index.html" class="navbar-brand"><img src="../cms/uploads/images/logo.png" alt="logo"/></a>
+          			<span class="text-muted pull-left centr azul">content manager system</span>
+        		</div>
+				<div class="collapse navbar-collapse">
+					<p class="navbar-text navbar-right centr">Hola, <a href="#" class="navbar-link">Administrador</a> <span class="glyphicon glyphicon-play"></span></p>
+				</div>
+			</nav>	
+			<ul class="nav nav-pills">
+				<li class="text-center"><a href="listado.html"><img src="../cms/uploads/images/libros/menu_libro.png" alt="menu_libro" /><br/>Libros</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/autores.png" alt="autores" /><br/>Autores</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/carrito.png" alt="autores" /><br/>Pedidos</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/comment.png" alt="autores" /><br/>Comentarios</a></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/usuarios.png" alt="autores" /><br/>Usuarios</a></li>
+				<li class="alto-fijo vr"></li>
+				<li class="text-center"><a href="#"><img src="../cms/uploads/images/libros/config.png" alt="autores" /><br/>Config</a></li>
+			</ul>
+			<hr class="hr-nomargin"/><br/>
+			<div>
+				<div class="pull-left cab-izq">
+					<img src="../cms/uploads/images/libros/libro_icono.png" alt="libro">
+				</div>
+				<div class="pull-left cab-der">
+					<h3 class="azul">Libros <small><span class="badge">4</span></small></h3>
+					<a class="pull-right" href="ficha.html"><span class="glyphicon glyphicon-book"></span>&nbsp;Nuevo libro</a>
+					<hr class="margen-10"/>
+					<ol class="breadcrumb">
+					  <li><small><a href="index.html">Home</a></small></li>
+					  <li class="active"><small>Libros</small></li>
+					</ol>
+				</div>
+			</div>
+			<br />
+			<div class="clearfix"></div>
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					<label class="sr-only" for="busqueda">Busqueda</label>
+					<input type="email" class="form-control largo" id="busqueda" placeholder="Titulo del libro o nombre del autor">
+				</div>
+				<button type="submit" class="btn btn-default">
+				  <span class="glyphicon glyphicon-search"></span> Buscar
+				</button>
+			</form><br/>
+			<table class="table">
+				<thead>
+					<tr>
+						<td>libro</td>
+						<td></td>
+						<td>precio</td>
+						<td>comentarios</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</thead>
+					<tr>
+						<td class="text-center"><a href="ficha.html"><img src="../cms/uploads/images/libros/frank.jpg" alt="frank" class="img-thumbnail"></a></td>
+						<td><strong>Frankenstein</strong><br/><span class="text-muted">Mory Shelly<br/><small>Anaya</small><br/><br/>isbn: 743487583 / 345 p&aacute;ginas</span></td>
+						<td><span class="lead naranja">9,00 &euro;</span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;1/1<br/><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span></span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-edit"></span></span></td>
+						<td><span class="lead"><span data-toggle="modal" data-target="#myModal" class="glyphicon glyphicon-remove"></span></span></td>
+					</tr>
+					<tr>
+						<td class="text-center"><a href="ficha.html"><img src="../cms/uploads/images/libros/oliver.jpg" alt="oliver" class="img-thumbnail"></a></td>
+						<td><strong>Oliver Twist</strong><br/><span class="text-muted">Charles Dickens<br/><small>Anaya</small><br/><br/>isbn: 343434742 / 789 p&aacute;ginas</span></td>
+						<td><span class="lead naranja">17,00 &euro;</span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;1/1<br/><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon glyphicon-star-empty"></span></span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-edit"></span></span></td>
+						<td><span class="lead"><span data-toggle="modal" data-target="#myModal1" class="glyphicon glyphicon-remove"></span></span></td>
+					</tr>
+					<tr>
+						<td class="text-center"><a href="ficha.html"><img src="../cms/uploads/images/libros/alicia.jpg" alt="alicia" class="img-thumbnail"></a></td>
+						<td><strong>Alice's Adventures in Wonderland</strong><br/><span class="text-muted">Lewis Carroll<br/><small>Anaya</small><br/><br/>isbn: 343048470 / 130 p&aacute;ginas</span></td>
+						<td><span class="lead naranja">7,00 &euro;</span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;2/2<br/><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star-empty"></span></span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-edit"></span></span></td>
+						<td><span class="lead"><span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-remove"></span></span></td>
+					</tr>
+					<tr>
+						<td class="text-center"><a href="ficha.html"><img src="../cms/uploads/images/libros/anna.jpg" alt="anna" class="img-thumbnail"></a></td>
+						<td><strong>Anna Karenina</strong><br/><span class="text-muted">León Tolstói<br/><small>Anaya</small><br/><br/>isbn: 670894788 / 1.754 p&aacute;ginas</span></td>
+						<td><span class="lead naranja">22,00 &euro;</span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;2/2<br/><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star"></span><span class="glyphicon glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon glyphicon-star-empty"></span></span></td>
+						<td><span class="lead"><span class="glyphicon glyphicon-edit"></span></span></td>
+						<td><span class="lead"><span data-toggle="modal" data-target="#myModal3" class="glyphicon glyphicon-remove"></span></span></td>
+					</tr>
+			</table>
+			<div>
+				<small class="azul pull-left bajar">4 libros</small>
+				<ul class="pagination pull-right">
+				  <li><a href="#">&laquo;</a></li>
+				  <li><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#">&raquo;</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+			<div class="clearfix pie">
+				<hr/>
+				<small class="azul pie-izq">&copy; Universidad de Alicante 2013</small>
+				<small class="azul pie-der pull-right">by <a href="#">Proweb</a>&nbsp;/ v1.04</small>
+			</div>
+			<!-- Button trigger modal -->
+
+			<!-- Modal de Frankenstein -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title" id="myModalLabel">Eliminar libro</h4>
+      					</div>
+      					<div class="modal-body">
+        					¿Estas seguro que desea eliminar el libro <strong>Frankenstein</strong> de <em>Mary Sheller</em>?
+      					</div>
+      					<div class="modal-footer muted">
+        					<a data-dismiss="modal" href="#">Cancelar</a>&nbsp;&nbsp;
+        					<button type="button" class="btn btn-danger">Eliminar</button>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<!-- Modal de Oliver Twist -->
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel1" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title" id="myModalLabel1">Eliminar libro</h4>
+      					</div>
+      					<div class="modal-body">
+        					¿Estas seguro que desea eliminar el libro <strong>Oliver Twist</strong> de <em>Charles Dickens</em>?
+      					</div>
+      					<div class="modal-footer muted">
+        					<a data-dismiss="modal" href="#">Cancelar</a>&nbsp;&nbsp;
+        					<button type="button" class="btn btn-danger">Eliminar</button>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<!-- Modal de Alice's Adventures in Wonderland -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel2" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title" id="myModalLabel2">Eliminar libro</h4>
+      					</div>
+      					<div class="modal-body">
+        					¿Estas seguro que desea eliminar el libro <strong>Alice's Adventures in Wonderland</strong> de <em>Lewis Carroll</em>?
+      					</div>
+      					<div class="modal-footer muted">
+        					<a data-dismiss="modal" href="#">Cancelar</a>&nbsp;&nbsp;
+        					<button type="button" class="btn btn-danger">Eliminar</button>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+			<!-- Modal de Anna Karenina -->
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="#myModalLabel3" aria-hidden="true">
+  				<div class="modal-dialog">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        					<h4 class="modal-title" id="myModalLabel3">Eliminar libro</h4>
+      					</div>
+      					<div class="modal-body">
+        					¿Estas seguro que desea eliminar el libro <strong>Anna Karenina</strong> de <em>León Tolstói</em>?
+      					</div>
+      					<div class="modal-footer muted">
+        					<a data-dismiss="modal" href="#">Cancelar</a>&nbsp;&nbsp;
+        					<button type="button" class="btn btn-danger">Eliminar</button>
+      					</div>
+    				</div><!-- /.modal-content -->
+  				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</div>	
+</body>
+</html>
