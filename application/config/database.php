@@ -64,6 +64,21 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
+$db['online']['hostname'] = 'localhost';
+$db['online']['username'] = 'p13drm';
+$db['online']['password'] = '48561257T';
+$db['online']['database'] = 'DBp13drm';
+$db['online']['dbdriver'] = 'mysql';
+$db['online']['dbprefix'] = '';
+$db['online']['pconnect'] = TRUE;
+$db['online']['db_debug'] = TRUE;
+$db['online']['cache_on'] = FALSE;
+$db['online']['cachedir'] = '';
+$db['online']['char_set'] = 'utf8';
+$db['online']['dbcollat'] = 'utf8_general_ci';
+$db['online']['swap_pre'] = '';
+$db['online']['autoinit'] = TRUE;
+$db['online']['stricton'] = FALSE;
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
