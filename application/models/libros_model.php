@@ -2,7 +2,7 @@
     Class Libros_model extends CI_Model{
         /* Metodo que devuelve un array de los comentarios validos del libro pasado como parametro */
         function getComentarios($id){
-            $query = $this->db->select('descripcion');
+            $query = $this->db->select('*');
             $query = $this->db->get_where('comentarios', array('fk_libros'=>$id, 'validado'=>1));
             $comentarios = array();
             foreach($query->result_array() as $row){
@@ -20,19 +20,20 @@
             $query = $this->db->get();
             $autores = array();
             foreach ($query->result_array() as $row){
-                $autores[] = $row;
+                $autores = $row;
             }
             return $autores;
         }
         
         /* Metodo que devuelve los datos de un libro junto con los autores y los comentarios del mismo */
         function read($id){
+            $query = $this->db->select('*');
             $query = $this->db->get_where('libros', array('id'=>$id));
             $libros = array();
             foreach ($query->result_array() as $row){
-                $libros[] = $row;
-                $libros['comentarios'] = $this->getComentarios($row['id']);
-                $libros['autores'] = $this->getAutores($row['id']);
+                $row['comentarios'] = $this->getComentarios($row['id']);
+                $row['autores'] = $this->getAutores($row['id']);
+                $libros = $row;
             }
             return $libros;
         }
@@ -42,8 +43,6 @@
             $query = $this->db->get('libros');
             $libros = array();
             foreach ($query->result_array() as $row){
-                //$libros[] = $row;
-                //$libros['autores'] = $this->getAutores($row['id']);
                 $row['autores'] = $this->getAutores($row['id']);
                 $libros[] = $row;
             }
