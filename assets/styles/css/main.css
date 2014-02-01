@@ -1,7 +1,6 @@
 /*
     Document   : main
-    Description:
-        Carga de todos los .css implicados en el diseño
+    Description: Carga de todos los .css implicados en el diseño
 */
 
 /*
@@ -18,8 +17,3 @@
  * Todos los elementos del contenido
  */
 @import url("content.css");
-
-/*
- * Elementos de los formularios
- */
-@import url("forms.css");

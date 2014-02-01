@@ -11,7 +11,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Karla">
-        <link rel="stylesheet" type="text/css" href="<?php base_url(); ?>assets/styles/css/main.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/styles/css/main.css">
     </head> 
     <body>
         <header > 
@@ -20,8 +20,8 @@
                     <a href="#" title="Identifícate">Identif&iacute;cate</a>|
                     <a href="#" title="Ver detalles compra">Art&iacute;culos[0]</a>
                 </p>
-                <a href="#" title="Ver detalles compra"><img class="imagen_cesta" src="<?php base_url(); ?>assets/styles/images/cesta.png" alt="Cesta compra" title="Ver detalles compra" width="46" height="54"/></a>
-            </section>
+                <a href="#" title="Ver detalles compra"><img class="imagen_cesta" src="<?php echo base_url(); ?>assets/styles/images/cesta.png" alt="Cesta compra" title="Ver detalles compra" width="46" height="54"/></a>
+            </section><?php base_url();?>
             <nav>
                 <ul>
                     <li><a href="index.php" title="Inicio - Home"><img class="logo" src="<?php base_url(); ?>assets/styles/images/logo.png" alt="logo" width="91" height="85" /></a></li>            

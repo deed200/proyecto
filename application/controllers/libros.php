@@ -5,7 +5,7 @@ Class Libros extends MY_Controller{
     /* Funcion que carga la home de la aplicacion donde se ven todos los libros dados de alta en la BB.DD  */
     public function index(){
         $this->data['libros'] = $this->libros->getLibros();
-        $this->view = 'libros/listar.php';
+        $this->view = 'libros/listar';
     }
     
     /* Metodo que devuelve los datos de un libro junto con sus comentarios validados */

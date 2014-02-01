@@ -14,7 +14,7 @@
         /* Metodo que devuelve un array con los autores del libro pasado como parametro */
         function getAutores($id){
             $query = $this->db->select('nombre');
-            $query = $this->from('autores');
+            $query = $this->db->from('autores');
             $query = $this->db->join("libros_autores", "libros_autores.fk_autores = autores.id");
             $query = $this->db->where('libros_autores.fk_libros', $id);
             $query = $this->db->get();
@@ -42,8 +42,10 @@
             $query = $this->db->get('libros');
             $libros = array();
             foreach ($query->result_array() as $row){
+                //$libros[] = $row;
+                //$libros['autores'] = $this->getAutores($row['id']);
+                $row['autores'] = $this->getAutores($row['id']);
                 $libros[] = $row;
-                $libros['autores'] = $this->getAutores($row['id']);
             }
             return $libros;
         }

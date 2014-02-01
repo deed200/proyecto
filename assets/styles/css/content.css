@@ -8,15 +8,51 @@
  * BASIC ELEMENTS
  * -----------------------------------------------------------------------------
  */
-
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.display-inline{
+    display: inline;
+}
+.display-inline-block{
+    display: inline-block;
+}
 /* --------------------------------------
  * Titles
  * --------------------------------------
  */
-h1 { }
-h2 { }
-h3 { }
-h4 { }
+h1 {
+    font-family: 'Karla', Arial; 
+    font-size: 24px;
+    margin: 8px 0;
+    margin-left: 0px;
+    color: #045887;
+    font-weight: bold; }
+h2 { 
+    font-family: 'Karla', Arial; 
+    border-bottom: #0089D0 3px solid;  
+    padding: 25px 0 5px 10px;
+    margin-bottom: 10px;
+    font-size: 28px; 
+    color:#045887;
+}
+h3 {
+    font-family: 'Karla', Arial; 
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+h4 {
+    font-size: 16px;
+    color: #0089D0;
+    margin: 8px 0;
+}
 h5 { }
 h6 { }
 
@@ -24,14 +60,19 @@ h6 { }
  * Links
  * --------------------------------------
  */
-a       {  }
-a:hover {  }
-
+a{
+    color: #045887;
+    font-weight: normal;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}           
 /* --------------------------------------
  * Texts
  * --------------------------------------
  */
-p {  }
+p { text-align: justify; }
 
 /* --------------------------------------
  * Lists
@@ -53,3 +94,324 @@ p {  }
  * CONTENIDO
  * -----------------------------------------------------------------------------
  */
+.layout-1 .find{
+    width: 100%;
+    background-color: #ffffff;
+    float: left; 
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+.layout-1 .find img{
+    vertical-align: middle;
+}
+.layout-1 .menu-lateral{
+    width: 100%;
+    background-color: #ffffff;
+    float: left; 
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: block; 
+    font-size: 15px;
+}
+.layout-1 .menu-lateral a{
+    color: #045887;
+}
+.layout-1 .menu-lateral li{
+    font-weight: bold;
+    color: #045887;
+    list-style: none;
+    font-style: normal;
+    padding: 10px; 
+}
+.layout-1 .menu-lateral li>a img{
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.layout-1 .menu-lateral li>ul>li a{
+    color: #045887;
+    font-weight: normal;
+}
+.layout-1 .menu-lateral li>ul>li{
+    margin-left: 15px;
+    font-weight: normal;
+    color: #045887;
+    margin-top: -15px;
+    padding-bottom: 8px; 
+}
+.layout-1 .banner{
+    width: 100%;
+    background-color: #ffffff;
+    float: left; 
+    margin-top: 10px;
+    padding: 10px 10px;
+}
+
+.layout-2-a .slider{
+    margin: 10px 0;
+    width: 760px;
+}
+.layout-2-a .slider p{
+    font-family: 'Karla', Arial; 
+    line-height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    width: 350px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+.layout-2-a button{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    top: 125px;
+    left: 470px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.layout-2-a button img{
+    vertical-align: middle;
+    padding-left: 5px;
+    margin-top: -5px;
+}
+.libro{
+    float: left; 
+    width: 128px; 
+    padding: 11px;
+}
+.libro:hover{
+    background-color: #fff;
+    border-bottom: 3px #0089D0 solid;
+    border-top: 2px #0089D0 solid;
+}
+.libro .titulo{
+    font-size: 14px;
+    font-weight: bold;
+    color:#045887;
+}
+.libro .autor{
+    font-size: 12px;
+    color:#045887;
+    font-weight: normal;
+}
+.libro .editorial{
+    font-size: 12px;
+    font-weight: normal;
+    color:#045887;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.libro .precio{
+    float: right;
+    font-weight: bold; 
+    margin: 15px 5px 5px 5px;
+    text-align: left;
+    font-size: 20px; 
+    color:#ff5a00; 
+}
+.listado-indice{
+    margin: 15px 0 10px;
+}
+.listado-indice span{
+    float: right;
+}
+.listado-indice a{
+    font-weight: bold;
+    color: #045887;
+}
+.libro-listado{
+    width: 100%;
+    height: 140px;
+    line-height: 18px;
+}         
+libro-listado a{
+    color: #045887;
+    font-weight: normal;
+}
+.libro-listado img{
+    border: 5px #dfdfdf solid;
+    float: left;
+    margin: 0px 10px;
+}
+img.puntuacion{
+    vertical-align: middle;
+}
+.libro-listado img.puntuacion{
+    border: 0;
+    float: left;
+    margin: 0px;
+}
+.libro-listado .titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+.libro-listado .editorial{
+    font-weight: bold;
+}
+.libro-listado .precio{
+    font-size: 26px;
+    text-align: right;
+}
+.libro-listado button.comprar{
+    background-color: #0089D0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+.libro-listado button img{
+    vertical-align: middle;
+    padding-left: 5px;
+    margin-top: -5px;
+}        
+.paginacion{
+    text-align: center;
+    margin: 10px;
+    color: #045887;
+}
+.paginacion a{
+    color: #045887;
+    margin: 0 3px;
+    font-weight: normal;
+}
+.paginacion a:hover{
+    font-weight: bold;
+}
+.tooltip{
+    display: inline;
+    position: relative;
+}
+.tooltip a{
+    text-decoration: none;
+}
+.tooltip:hover:after{
+    background: #0089D0;
+    border-radius: 5px;
+    bottom: 4px;
+    color: #fff;
+    content: attr(title);
+    left: 0;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 125px;
+}
+.tooltip:hover:before{
+    border: solid;
+    border-color: #0089D0 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 0px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+.listado-autores{
+    width: 100%;
+    background-color: #fff;
+}
+.listado-letra{
+    float: left;
+    width: 200px;
+    padding: 17px; 
+}
+.listado-letra .letra{
+    font-weight:  bold;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.libro2{
+    line-height: 12px;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+.libro2 img{
+    float: left;
+    margin: 12px 5px 0 0;
+}
+.libro2 .titulo{
+    font-weight: bold;    
+}
+.libro2 .precio{
+    color: #ff5a00;    
+}
+.ultimos-valorados{
+    clear: both;
+    padding: 10px 20px;
+}
+.form-comentario input, .form-comentario {
+    width: 100%;
+}
+
+
+.form-comentario button, button{
+    background-color: #0089D0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    margin: 5px 0;
+    vertical-align: middle;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.detalle-izq{
+    width: 150px; 
+    float: left; 
+    padding: 10px 20px;
+}
+.detalle-centro{
+     background-color: #fff; 
+     width: 540px; 
+     padding: 10px 20px; 
+     margin-left: 190px;
+}
+.detalle-derecha{
+     width: 170px; 
+     float: right; 
+     padding: 10px 20px;
+}
+
+.comprar-fin, .tramitar{
+    width: 100%;
+    margin-top: 5px; 
+}
+.comprar-fin{
+    background-color: #ff5a00;
+}
+.tramitar{
+    background-color: #045887;
+}
+.precio-total{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff5a00;
+    padding: 5px;
+}
+.amigos{
+    padding: 15px 0;
+    
+    margin-bottom: 10px; 
+}
+.amigos-detalle{
+    background-color: #fff;
+    width: 50px;
+    float: left;
+    padding: 2px;
+}
+.margin-top20{
+    margin-top: 20px;
+}
