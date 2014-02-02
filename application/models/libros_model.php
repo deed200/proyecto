@@ -30,9 +30,9 @@
             $query = $this->db->get_where('libros', array('id'=>$id));
             $libros = array();
             foreach ($query->result_array() as $row){
+                $row['comentarios'] = $this->getComentarios($id);
+                $row['autores'] = $this->getAutores($id);
                 $libros[] = $row;
-                $libros['comentarios'] = $this->getComentarios($row['id']);
-                $libros['autores'] = $this->getAutores($row['id']);
             }
             return $libros;
         }
