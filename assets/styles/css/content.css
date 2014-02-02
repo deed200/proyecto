@@ -183,11 +183,15 @@ p { text-align: justify; }
     float: left; 
     width: 128px; 
     padding: 11px;
+    border-top: 2px;
+    border-bottom: 3px;
+    border-style: solid;
+    border-color: #f5f5f5;
 }
 .libro:hover{
     background-color: #fff;
-    border-bottom: 3px #0089D0 solid;
-    border-top: 2px #0089D0 solid;
+    border-color: #0089D0;
+    border-style: solid;
 }
 .libro .titulo{
     font-size: 14px;

@@ -21,14 +21,14 @@
                     <a href="#" title="Ver detalles compra">Art&iacute;culos[0]</a>
                 </p>
                 <a href="#" title="Ver detalles compra"><img class="imagen_cesta" src="<?php echo base_url(); ?>assets/styles/images/cesta.png" alt="Cesta compra" title="Ver detalles compra" width="46" height="54"/></a>
-            </section><?php base_url();?>
+            </section>
             <nav>
                 <ul>
-                    <li><a href="index.php" title="Inicio - Home"><img class="logo" src="<?php base_url(); ?>assets/styles/images/logo.png" alt="logo" width="91" height="85" /></a></li>            
-                    <li><p><a href="libros.php" title="Listado de libros"><img src="<?php base_url(); ?>assets/styles/images/libros.png" alt="Listado de libros" title="Listado de libros" width="31" height="23"/>Libros</a></p></li>
-                    <li><p><a href="autores.php" title="Listado de autores"><img src="<?php base_url(); ?>assets/styles/images/autores.png" alt="Listado de autores" title="Listado de autores" width="34" height="20"/>Autores</a></p></li>
-                    <li><p><a href="#" title="Listado de libros más leídos"><img src="<?php base_url(); ?>assets/styles/images/masleido.png" alt="Listado de más leídos" title="Listado de más leídos" width="26" height="22"/>Lo+le&iacute;do</a></p></li>
-                    <li><p><a href="#" title="Contacto"><img src="<?php base_url(); ?>assets/styles/images/contacto.png" alt="Contacto" title="Contacto" width="28" height="18"/>Contacto</a></p></li>
+                    <li><a href="<?php echo base_url();?>" title="Inicio - Home"><img class="logo" src="<?php echo base_url(); ?>assets/styles/images/logo.png" alt="logo" width="91" height="85" /></a></li>            
+                    <li><p><a href="<?php echo base_url();?>libros" title="Listado de libros"><img src="<?php echo base_url(); ?>assets/styles/images/libros.png" alt="Listado de libros" title="Listado de libros" width="31" height="23"/>Libros</a></p></li>
+                    <li><p><a href="autores" title="Listado de autores"><img src="<?php echo base_url(); ?>assets/styles/images/autores.png" alt="Listado de autores" title="Listado de autores" width="34" height="20"/>Autores</a></p></li>
+                    <li><p><a href="#" title="Listado de libros más leídos"><img src="<?php echo base_url(); ?>assets/styles/images/masleido.png" alt="Listado de más leídos" title="Listado de más leídos" width="26" height="22"/>Lo+le&iacute;do</a></p></li>
+                    <li><p><a href="#" title="Contacto"><img src="<?php echo base_url(); ?>assets/styles/images/contacto.png" alt="Contacto" title="Contacto" width="28" height="18"/>Contacto</a></p></li>
                 </ul>
             </nav>
             <section class="bottom-gradiente-izq-a-derecha"></section>
