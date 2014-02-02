@@ -48,5 +48,22 @@ Class Libros_model extends CI_Model{
             }
             return $libros;
         }
+        
+        /* Metodo que busca los libros por el titulo */
+        function buscarLibros($titulo){
+            $query = $this->db->select('*');
+            $query = $this->db->from('libros L');
+            $query = $this->db->join('libros_autores L_A',  'L.id = L_A.fk_libros');
+            $query = $this->db->join('autores A', 'A.id = L_A.fk_autores');        	
+            $query = $this->db->like('L.titulo', $titulo);		
+            $query = $this->db->group_by('L.id');
+            $query = $this->db->get();
+            $libros = array();
+            foreach ($query->result_array() as $row){
+                $row['autores'] = $this->getAutores($row['id']);
+                $libros[] = $row;
+            }
+            return $libros;
+        }
     }
 ?>

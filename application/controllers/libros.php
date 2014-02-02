@@ -15,7 +15,7 @@ Class Libros extends MY_Controller{
         }
     }
     
-    /* Metodo que devuelve los datos de un libro junto con sus comentarios validados */
+    /* Metodo que carga la ficha de un libro */
     public function ver(){
         try{
             if ($this->uri->segment(3) === FALSE){
@@ -23,6 +23,18 @@ Class Libros extends MY_Controller{
             }    
             $id = $this->uri->segment(3); //Recojo el id de la URL
             $this->data['libro'] = $this->libros->read($id);
+        }  catch (Exception $e){
+            show_error($e->getMessage());
+        }
+    }
+    
+    /* Metodo que muestra el resultado de la busqueda de libros */
+    public function buscar(){
+        try{
+            if(!$this->input->post('titulo')){
+                throw new Exception('No se ha especificado titulo para la busqueda');
+            }
+            $this->data['libros'] = $this->libros->buscarLibros($this->input->post('titulo'));
         }  catch (Exception $e){
             show_error($e->getMessage());
         }
